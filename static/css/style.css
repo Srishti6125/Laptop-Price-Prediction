@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #111827 0, #020617 40%, #01050f 100%);
+    color: #e5e7eb;
+    font-size: 15px;
+}
+
+/* ======================= HEADER ======================= */
+
+.topbar {
+    padding: 26px 16px 0;
+    text-align: center;
+}
+
+.title-block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid rgba(56, 189, 248, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #0ea5e9, #0369a1);
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.5);
+    color: #e0f2fe;
+}
+
+.title-icon i {
+    font-size: 23px;
+}
+
+.title-text h1 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    color: #22d3ee;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
+}
+
+.title-text p {
+    margin: 6px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #9ca3af;
+}
+
+/* ======================= CARD ======================= */
+
+.card {
+    max-width: 1100px;
+    width: 100%;
+    margin: 24px auto;
+    background: #050a16;
+    border-radius: 18px;
+    padding: 30px 32px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(31, 41, 55, 0.8);
+}
+
+.section {
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top: 1px solid #1e293b;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+
+/* ======================= GRID ======================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 26px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======================= FORM ======================= */
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #e2e8f0;
+    margin-bottom: 4px;
+}
+
+small.hint {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+input,
+select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #0f172a;
+    background: #0c1627;
+    color: #e5e7eb;
+    font-size: 15px;
+    outline: none;
+    transition: 0.15s ease-in-out;
+}
+
+/* lighter bluish input background */
+input,
+select {
+    background: rgba(30, 41, 59, 0.9);
+}
+
+input:focus,
+select:focus {
+    border-color: #38bdf8;
+    background: rgba(30, 41, 59, 1);
+    box-shadow:
+        0 0 0 1px rgba(56, 189, 248, 0.5),
+        0 0 15px rgba(8, 47, 73, 0.9);
+}
+
+/* Checkboxes */
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.checkbox-group label {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* ======================= RESULT ======================= */
+
+.result-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg,
+        rgba(56, 189, 248, 0.15),
+        rgba(15, 23, 42, 1));
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    border-radius: 16px;
+}
+
+.result-label {
+    color: #93c5fd;
+    font-size: 15px;
+}
+
+.result-value {
+    font-size: 34px;
+    font-weight: 700;
+    color: #e0f2fe;
+    margin-top: 8px;
+}
+
+.result-sub {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* ======================= BUTTON ======================= */
+
+.submit-section {
+    margin-top: 28px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9, #2563eb);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.12s ease-in-out;
+    box-shadow: 0 20px 40px rgba(8, 47, 73, 0.85);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 26px 55px rgba(8, 47, 73, 1);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* spinner */
+.btn-spinner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+    display: none;
+}
+
+.btn.loading .btn-spinner {
+    display: inline-block;
+}
+
+.btn.loading .btn-label {
+    opacity: 0.8;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ======================= FOOTER ======================= */
+
+.footer {
+    text-align: center;
+    margin: 20px 0 30px;
+    font-size: 14px;
+    color: #64748b;
+}
