@@ -71,7 +71,7 @@ Additional engineered features like **PPI (pixels per inch)** and **log-transfor
 
 ---
 
-## 📊 Model Performance (Example)
+## 📊 Model Performance
 
 Multiple models were trained and evaluated:
 - Linear Regression
@@ -80,6 +80,7 @@ Multiple models were trained and evaluated:
 - XGBoost Regressor ✅
 
 The XGBoost Regressor achieved the best overall performance with:
+
 ✅ Low MAE (Mean Absolute Error)
 ✅ Low RMSE (Root Mean Squared Error)
 ✅ High R² score (explained variance)
@@ -97,8 +98,6 @@ The web app is designed with a modern neon dark-blue theme featuring:
 - Highlighted section headings (Basic Details, Display, Processor, etc.)
 - Styled dropdowns and inputs with subtle blue borders and focus shadows
 - A prominent result card showing the predicted price
-- Automatic scrolling to the result section after prediction
-- “Sticky” form values so user inputs stay visible after prediction
 
 ---
 
