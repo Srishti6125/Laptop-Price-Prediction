@@ -2,7 +2,7 @@
 
 > Predict laptop prices using a machine-learning regression pipeline, deployed with a modern neon-themed Flask web interface.
 
-🌐 **Live App**: [Try it here!]([(https://laptop-price-prediction-a0et.onrender.com/)])  
+🌐 **Live App**: [Try it here!](https://laptop-price-prediction-a0et.onrender.com/) 
 
 ---
 
